@@ -19,11 +19,59 @@
 
   <dependencies>
     <!-- add your dependencies here! -->
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
     <dependency>
-      <groupId></groupId>
-      <artifactId></artifactId>
-      <version></version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.20.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.miglayout/miglayout-swing -->
+    <dependency>
+      <groupId>com.miglayout</groupId>
+      <artifactId>miglayout-swing</artifactId>
+      <version>11.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.collections/google-collections -->
+<!--    <dependency>-->
+<!--      <groupId>com.google.collections</groupId>-->
+<!--      <artifactId>google-collections</artifactId>-->
+<!--      <version>1.0</version>-->
+<!--    </dependency>-->
+    <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-jre</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.7</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/auth -->
+    <dependency>
+      <groupId>software.amazon.awssdk</groupId>
+      <artifactId>auth</artifactId>
+      <version>2.20.69</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/rekognition -->
+    <dependency>
+      <groupId>software.amazon.awssdk</groupId>
+      <artifactId>rekognition</artifactId>
+      <version>2.20.69</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+
+
+
+
   </dependencies>
 
   <build>
