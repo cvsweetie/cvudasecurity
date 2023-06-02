@@ -2,6 +2,10 @@ package com.udacity.catpoint.data;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
+import com.udacity.commonservices.securityservice.data.AlarmStatus;
+import com.udacity.commonservices.securityservice.data.ArmingStatus;
+import com.udacity.commonservices.securityservice.data.SecurityRepository;
+import com.udacity.commonservices.securityservice.data.Sensor;
 
 import java.lang.reflect.Type;
 import java.util.Set;
@@ -13,7 +17,7 @@ import java.util.prefs.Preferences;
  * memory and writes it to user preferences between app loads. This implementation is
  * intentionally a little hard to use in unit tests, so watch out!
  */
-public class PretendDatabaseSecurityRepositoryImpl implements SecurityRepository{
+public class PretendDatabaseSecurityRepositoryImpl implements SecurityRepository {
 
     private Set<Sensor> sensors;
     private AlarmStatus alarmStatus;

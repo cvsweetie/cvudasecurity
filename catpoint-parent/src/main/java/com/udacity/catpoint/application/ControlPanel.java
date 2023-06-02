@@ -1,8 +1,9 @@
 package com.udacity.catpoint.application;
 
-import com.udacity.catpoint.data.ArmingStatus;
-import com.udacity.catpoint.service.SecurityService;
+
 import com.udacity.catpoint.service.StyleService;
+import com.udacity.commonservices.securityservice.SecurityService;
+import com.udacity.commonservices.securityservice.data.ArmingStatus;
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
@@ -38,6 +39,10 @@ public class ControlPanel extends JPanel {
             v.addActionListener(e -> {
                 securityService.setArmingStatus(k);
                 buttonMap.forEach((status, button) -> button.setBackground(status == k ? status.getColor() : null));
+
+                //somehow paint sensor panel?
+                repaint();
+                revalidate();
             });
         });
 
